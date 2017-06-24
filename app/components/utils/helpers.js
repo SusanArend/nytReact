@@ -8,9 +8,9 @@ var authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
 var helper = {
 
   // This function serves our purpose of running the query to geolocate.
-  runQuery: function(articleScrape) {
+  runQuery: function(articleQuery) {
 
-    console.log(articleScrape);
+    console.log(articleQuery);
 
     // Figure out the geolocation
     var queryURL = "http://https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=";
