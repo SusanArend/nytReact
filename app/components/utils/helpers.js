@@ -26,13 +26,14 @@ var helper = {
     });
   },
 
-  // This function hits our own server to retrieve the record of query results
+
+// This function hits our own server to retrieve the record of query results
   getHistory: function() {
     return axios.get("/api");
   },
 
-  // This function posts new searches to our database.
-  postHistory: function(articleScrape) {
+// This function posts new searches to our database.
+  postHistory: function(articleQuery) {
     return axios.post("/api", { location: location });
 
 //"location: location" ????????
@@ -41,3 +42,9 @@ var helper = {
 
 // We export the API helper
 module.exports = helper;
+
+
+
+response.docs[i].headline.main
+response.docs[i].pub_date
+response.docs[i].web_url
